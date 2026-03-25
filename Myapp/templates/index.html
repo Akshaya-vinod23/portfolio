@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="content">
+        <h3>Hello, It's Me</h3>
+        <h1>Akshaya vinod</h1>
+        <h2>And I'm a Developer</h2>
+        <p class="intro-text">Welcome to my portfolio website.
+        Passionate about building beautiful and functional web applications. 
+  Always eager to learn and grow as a developer.</p>
+         <!-- SOCIAL ICONS -->
+           <div class="social-icons">
+    <a href="https://www.linkedin.com/in/akshaya-vinod-7aa9b8172/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/Akshaya-vinod23" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="https://instagram.com/yourusername" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://twitter.com/yourusername" target="_blank">
+        <i class="fab fa-twitter"></i>
+    </a>
+</div>
+<div>
+
+        <a href="{% static 'files/cv.pdf' %}" download class="btn">Download CV</a></div>
+    </div>
+
+    <div class="image">
+        <img src="{% static 'images/profile.png' %}" alt="profile">
+    </div>
+</section>
+
+{% endblock %}

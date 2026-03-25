@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="about-section">
+
+    <div class="about-card">
+
+        <!-- IMAGE -->
+        <div class="image-container">
+            <img src="{% static 'images/profile.png' %}" alt="profile">
+        </div>
+
+        <!-- CONTENT BOX -->
+        <div class="about-box">
+            <h2>About Me</h2>
+            <h4>Akshaya Vinod - Developer</h4>
+
+            <p class="intro-text">
+                I am a passionate web developer focused on building modern,
+                responsive, and user-friendly websites.
+                Skilled in Python, Django, HTML, CSS, and JavaScript.
+                I enjoy learning new technologies and creating real-world solutions. My goal is to grow as a developer and build impactful digital products.
+            </p>
+
+            <!-- SOCIAL ICONS -->
+           <div class="social-icons">
+    <a href="https://www.linkedin.com/in/akshaya-vinod-7aa9b8172/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/Akshaya-vinod23" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="https://instagram.com/yourusername" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://twitter.com/yourusername" target="_blank">
+        <i class="fab fa-twitter"></i>
+    </a>
+</div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

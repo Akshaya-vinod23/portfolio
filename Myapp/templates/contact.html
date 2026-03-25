@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="contact-section">
+
+    <div class="contact-card">
+
+        <h2>Get in Touch</h2>
+        <p>Feel free to reach out for collaborations or just a friendly hello 👋</p>
+
+        <form method="POST">
+            {% csrf_token %}
+
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="input-box">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="input-box">
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- SOCIAL LINKS -->
+       <div class="social-icons">
+    <a href="https://www.linkedin.com/in/akshaya-vinod-7aa9b8172/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/Akshaya-vinod23" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="https://instagram.com/yourusername" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://twitter.com/yourusername" target="_blank">
+        <i class="fab fa-twitter"></i>
+    </a>
+</div>
+
+
+    </div>
+
+</section>
+
+{% endblock %}

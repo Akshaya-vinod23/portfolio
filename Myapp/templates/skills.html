@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="skills-section">
+
+    <h2 class="section-title">What I Do</h2>
+
+    <div class="skills-container">
+
+        <!-- Skill Card -->
+        <div class="skill-card">
+            <i class="fab fa-python"></i>
+            <h3>Python</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <h3>Django</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 75%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <h3>HTML</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 95%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 55%;"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ✅ ADD THIS BELOW -->
+    <div class="experience-box">
+        <h3>My Learning Journey 🚀</h3>
+        <p class="intro-text">
+            I have been continuously improving my development skills by building
+            real-world projects. I focus on writing clean, efficient code and
+            creating user-friendly designs. I enjoy solving problems and learning
+            new technologies every day.
+        </p>
+    </div>
+
+</section>
+
+{% endblock %}
